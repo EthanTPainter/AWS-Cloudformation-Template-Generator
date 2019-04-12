@@ -1,0 +1,56 @@
+{
+  "name": "github-slack-pr-bot",
+  "version": "1.0.0",
+  "description": "Sends alerts to slack after changes to PRs in GitHub",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc -w",
+    "ci": "npm run clean && npm i && npm run lint && npm run build && npm run test",
+    "ci:deploy:dev": "npm run ci && npm run deploy:dev",
+    "clean": "rm -rf ./dist && rm -rf ./node_modules",
+    "generate:docs": "typedoc --out docs/ src/",
+    "serve:docs": "npm run generate:docs && http-server ./docs -p 7000",
+    "deploy:prod": "npm run build && cd dist && serverless deploy -s prod",
+    "deploy:qa": "npm run build && cd dist && serverless deploy -s qa",
+    "deploy:dev": "npm run build && serverless deploy -s dev",
+    "deploy:integration": "npm run build && cd dist && serverless deploy -s build$BUILD_NUMBER",
+    "deploy:intergration:bucket": "aws s3 mb s3://scheduled-job-logger$BUILD_NUMBER",
+    "deploy:info": "cd dist && serverless info -s",
+    "lint:test": "tslint src/**/*.ts",
+    "lint:src": "tslint src/**/*.ts",
+    "lint": "npm run lint:src && npm run lint:test",
+    "start": "sls offline start --stage dev --port 3000",
+    "test:unit": "mocha -r ts-node/register test/unit/**/*.spec.ts",
+    "test:integration": "mocha -r ts-node/register test/integration/**/*.spec.ts --timeout 10000",
+    "test:watch": "npm run test:unit -- --watch",
+    "test": "npm run test:unit",
+    "release": "standard-version"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.394.0",
+    "dotenv": "^6.2.0",
+    "envalid": "^4.1.4",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^6.1.0",
+    "@types/lodash": "^4.14.119",
+    "@types/node": "^10.12.18",
+    "ts-node": "^4.1.0",
+    "tslint": "^5.9.0",
+    "typedoc": "^0.9.0",
+    "typescript": "^2.9.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EthanTPainter/AWS-Cloudformation-Template-Generator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EthanTPainter/AWS-Cloudformation-Template-Generator/issues"
+  },
+  "homepage": "https://github.com/EthanTPainter/AWS-Cloudformation-Template-Generator#readme"
+}
