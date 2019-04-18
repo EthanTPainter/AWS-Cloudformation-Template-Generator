@@ -1,2 +1,2 @@
 # AWS-Cloudformation-Template-Generator
-Angular tool to create AWS Cloudformation templates
+Angular application to create AWS Cloudformation templates
