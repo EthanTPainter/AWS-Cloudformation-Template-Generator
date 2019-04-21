@@ -1,5 +1,5 @@
 {
-  "name": "github-slack-pr-bot",
+  "name": "aws-cloudformation-template-generator",
   "version": "1.0.0",
   "description": "Sends alerts to slack after changes to PRs in GitHub",
   "private": true,
@@ -20,7 +20,7 @@
     "lint:test": "tslint src/**/*.ts",
     "lint:src": "tslint src/**/*.ts",
     "lint": "npm run lint:src && npm run lint:test",
-    "start": "sls offline start --stage dev --port 3000",
+    "start": "ng serve",
     "test:unit": "mocha -r ts-node/register test/unit/**/*.spec.ts",
     "test:integration": "mocha -r ts-node/register test/integration/**/*.spec.ts --timeout 10000",
     "test:watch": "npm run test:unit -- --watch",
@@ -28,29 +28,32 @@
     "release": "standard-version"
   },
   "dependencies": {
-    "@angular/common": "^2.3.1",
-    "@angular/compiler": "^2.3.1",
-    "@angular/core": "^2.3.1",
-    "@angular/forms": "^2.3.1",
-    "@angular/http": "^2.3.1",
-    "@angular/platform-browser": "^2.3.1",
-    "@angular/platform-browser-dynamic": "^2.3.1",
-    "@angular/router": "^3.3.1",
+    "@angular/common": "^7.2.13",
+    "@angular/compiler": "^7.2.13",
+    "@angular/core": "^7.2.13",
+    "@angular/forms": "^7.2.13",
+    "@angular/http": "^7.2.13",
+    "@angular/platform-browser": "^7.2.13",
+    "@angular/platform-browser-dynamic": "^7.2.13",
+    "@angular/router": "^7.2.13",
     "aws-sdk": "^2.394.0",
-    "dotenv": "^6.2.0",
-    "envalid": "^4.1.4",
-    "winston": "^3.2.1"
+    "core-js": "^3.0.1",
+    "dotenv": "^7.0.0",
+    "envalid": "^5.0.0",
+    "rxjs": "^6.4.0",
+    "winston": "^3.2.1",
+    "zone.js": "^0.9.0"
   },
   "devDependencies": {
-    "@angular/compiler-cli": "^2.3.1",
+    "@angular/compiler-cli": "^7.2.13",
     "@types/dotenv": "^6.1.0",
     "@types/lodash": "^4.14.119",
-    "@types/node": "^10.12.18",
+    "@types/node": "^11.13.6",
     "angular-cli": "1.0.0-beta.28.3",
-    "ts-node": "^4.1.0",
+    "ts-node": "^8.1.0",
     "tslint": "^5.9.0",
-    "typedoc": "^0.9.0",
-    "typescript": "^2.9.2"
+    "typedoc": "^0.14.2",
+    "typescript": "^3.3.0"
   },
   "repository": {
     "type": "git",
@@ -58,7 +61,7 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/EthanTPainter/AWS-Cloudformation-Template-Generator/issues"
   },

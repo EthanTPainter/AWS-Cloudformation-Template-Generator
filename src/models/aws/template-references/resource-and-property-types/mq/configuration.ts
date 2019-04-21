@@ -1,4 +1,4 @@
-import { ResourceTag } from "../shared-properties/resource-tag";
+import { ResourceTag } from "../shared-property-types/resource-tag";
 
 // https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-configuration.html
 export class Configuration {
