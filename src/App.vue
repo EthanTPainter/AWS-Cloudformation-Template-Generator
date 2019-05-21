@@ -19,13 +19,13 @@
 </template>
 
 <script>
-import TheHeader from "./components/TheHeader.vue";
-import TheFooter from "./components/TheFooter.vue";
-import TheAwsDropdown from "./components/dropdowns/TheAwsDropdown.vue";
-import ParameterTextField from "./components/ParameterTextField.vue";
-import TheParameters from "./components/TheParameters.vue";
-import TheOutline from "./components/TheOutline.vue";
-import ThePreview from "./components/ThePreview.vue";
+import TheHeader from "./components/TheHeader";
+import TheFooter from "./components/TheFooter";
+import TheAwsDropdown from "./components/dropdowns/TheAwsDropdown";
+import ParameterTextField from "./components/ParameterTextField";
+import TheParameters from "./components/TheParameters";
+import TheOutline from "./components/TheOutline";
+import ThePreview from "./components/ThePreview";
 
 export default {
   name: "App",
