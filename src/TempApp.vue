@@ -1,18 +1,19 @@
 <template>
   <div class="temp-app">
-    <test-resource />
+    <the-resource-dropdown />
   </div>
 </template>
 
 <script>
-import TestResource from "./components/aws-resources/TestResource.vue"
+import TheResourceDropdown from "./components/parameter/buttons/TheParameterButton";
+import { store } from "./store/store";
 
 export default {
   name: "TempApp",
+  store: store,
   template: "TempApp",
   components: {
-    TestResource
+    TheResourceDropdown
   }
-}
+};
 </script>
-

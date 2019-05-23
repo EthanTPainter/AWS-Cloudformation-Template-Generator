@@ -12,9 +12,5 @@
 <script>
 export default {
   name: "ThePreview"
-}
+};
 </script>
-
-<style scoped>
-
-</style>

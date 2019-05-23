@@ -1,17 +1,16 @@
 <template>
-  <div class="app">
-    <base-parameter-text-field />
+  <div class="base-parameter-text-field">
+    <base-outline-text-field />
   </div>
 </template>
 
 <script>
-import BaseParameterTextField from "../text-fields/BaseParameterTextField.vue";
+import BaseOutlineTextField from "../text-fields/BaseOutlineTextField";
 
 export default {
   name: "TestResource",
-  template: "TestResource",
   components: {
-    BaseParameterTextField
+    BaseOutlineTextField
   },
   data() {
     return {
@@ -35,6 +34,3 @@ export default {
   }
 }
 </script>
-
-<style>
-</style>

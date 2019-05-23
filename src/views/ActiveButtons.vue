@@ -1,5 +1,5 @@
 <template>
-  <div class="temp-app">
+  <div class="active-buttons">
     <the-parameter-button />
     <the-outline-button />
     <the-preview-button />
@@ -7,9 +7,9 @@
 </template>
 
 <script>
-import TheParameterButton from "./components/buttons/TheParameterButton.vue"
-import TheOutlineButton from "./components/buttons/TheOutlineButton.vue"
-import ThePreviewButton from "./components/buttons/ThePreviewButton.vue"
+import TheParameterButton from "./components/buttons/TheParameterButton"
+import TheOutlineButton from "./components/buttons/TheOutlineButton"
+import ThePreviewButton from "./components/buttons/ThePreviewButton"
 
 export default {
   name: "TempApp",
