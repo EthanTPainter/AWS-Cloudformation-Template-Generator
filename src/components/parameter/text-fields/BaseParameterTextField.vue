@@ -26,7 +26,7 @@
             />
           </v-flex>
           <v-flex xs2>
-            <v-btn color="red" v-on:click="remove">X</v-btn>
+            <v-btn color="red" v-on:click="remove(id)">X</v-btn>
           </v-flex>
         </v-layout>
       </v-container>
@@ -60,6 +60,6 @@ export default {
       keyText: "",
       valueText: ""
     };
-  },
+  }
 };
 </script>

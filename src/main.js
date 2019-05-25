@@ -1,13 +1,13 @@
 import Vue from "vue";
 import './plugins/vuetify'
-// import App from "./App.vue";
-import TempApp from "./TempApp.vue"
+import 'vuetify/dist/vuetify.min.css'
+import App from "./App.vue";
 
 Vue.config.productionTip = false;
 
-// new Vue({
-//   render: h => h(App),
-// }).$mount('#app');
+import { store } from "./store/store";
+
 new Vue({
-  render: h => h(TempApp),
+  store: store,
+  render: h => h(App),
 }).$mount('#app');

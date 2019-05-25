@@ -1,6 +1,10 @@
 <template>
   <div class="remove-button">
-    <v-btn color="red">X</v-btn>
+    <v-app>
+      <div>
+        <v-btn color="red">X</v-btn>
+      </div>
+    </v-app>
   </div>
 </template>
 

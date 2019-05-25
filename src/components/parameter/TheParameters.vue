@@ -18,7 +18,7 @@
 </template>
 
 <script>
-import TheParameterTitle from "./TheParameterTitle";
+import TheParameterTitle from "./header/TheParameterTitle";
 import BaseParameterTextField from "./text-fields/BaseParameterTextField";
 import { mapState } from "vuex";
 
@@ -45,8 +45,8 @@ export default {
         value: ""
       });
     },
-    removeParameter() {
-      this.$store.commit("removeParameter", this.id);
+    removeParameter(id) {
+      this.$store.commit("removeParameter", id);
     },
     updateParameter(id, key, value) {
       const payload = { id, key, value };
