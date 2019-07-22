@@ -4,10 +4,7 @@
       <v-form>
         <v-container>
           <v-layout row wrap>
-            <v-flex xs3>
-              <v-subheader style="text-align: center">{{ key }}</v-subheader>
-            </v-flex>
-            <v-text-field placeholder="Value" outline color="blue" solo v-bind:hint="description"/>
+            <v-text-field placeholder="Value" outline color="blue" v-bind:hint="description" />
           </v-layout>
         </v-container>
       </v-form>

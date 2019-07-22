@@ -2,10 +2,7 @@
   <div class="app">
     <v-container>
       <v-layout align-center>
-        <v-flex xs4>
-          <v-text-field readonly solo v-bind:placeholder="placeholder"></v-text-field>
-        </v-flex>
-        <v-flex xs4>
+        <v-flex xs12>
           <v-text-field solo v-bind:label="label" v-model="text" v-bind:hint="hint"></v-text-field>
         </v-flex>
       </v-layout>
@@ -40,4 +37,3 @@ export default {
   }
 };
 </script>
-
