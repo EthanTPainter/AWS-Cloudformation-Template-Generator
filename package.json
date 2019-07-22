@@ -8,9 +8,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "build-storybook": "build-storybook",
-    "release": "standard-version",
-    "storybook": "start-storybook -p 6006"
+    "release": "standard-version"
   },
   "dependencies": {
     "aws-sdk": "^2.394.0",
@@ -24,10 +22,6 @@
   },
   "devDependencies": {
     "@babel/core": "^7.4.4",
-    "@storybook/addon-actions": "^5.0.11",
-    "@storybook/addon-links": "^5.0.11",
-    "@storybook/addons": "^5.0.11",
-    "@storybook/vue": "^5.0.11",
     "@types/dotenv": "^6.1.0",
     "@types/lodash": "^4.14.119",
     "@types/node": "^11.13.6",
