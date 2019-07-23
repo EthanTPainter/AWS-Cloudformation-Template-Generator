@@ -1,2 +1,2 @@
 # AWS-Cloudformation-Template-Generator
-Angular application to create AWS Cloudformation templates
+Vue application to create various Vue components (with Vuetify material design)
