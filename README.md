@@ -1,2 +1,2 @@
-# AWS-Cloudformation-Template-Generator
-Vue application to create various Vue components (with Vuetify material design)
+# Vue-Playground
+Vue application to create various Vue components
