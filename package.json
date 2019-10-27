@@ -30,7 +30,7 @@
     "@vue/cli-service": "^3.7.0",
     "babel-loader": "^8.0.6",
     "babel-preset-vue": "^2.0.2",
-    "eslint": "^5.16.0",
+    "eslint": "^6.6.0",
     "eslint-plugin-vue": "^5.2.2",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.1",
